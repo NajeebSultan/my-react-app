@@ -10,7 +10,7 @@ const food2 = "Banana";
     <ul>
       <li>Apple</li>
       <li>{food1}</li>
-      <li>{food2.toUpperCase()}</li>
+      <li>{food2}</li>
 
     </ul>
   );

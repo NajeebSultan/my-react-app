@@ -2,7 +2,7 @@
 function Button(props){
   return( 
     <div>
-      <p>Name: {props} </p>
+      <p>Name: {props.name} </p>
     </div>
   );
 }

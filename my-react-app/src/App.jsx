@@ -5,6 +5,10 @@ function App() {
   return (
     <>
       <Student name="Spongebob" age={30} isStudent={true} />
+      <Student name="Patrick" age={42} isStudent={No} />
+      <Student name="Spongebob" age={30} isStudent={true} />
+
+
     </>
   );
 }

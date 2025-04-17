@@ -1,11 +1,12 @@
-import Student from './Student.jsx'
+import React from 'react';
+import Student from './Student.jsx';
 
-function App(){
+function App() {
   return (
-  <>
-  <Student name = "Spongebob" age = {30} isStudent = {true}/>
-  </>
+    <>
+      <Student name="Spongebob" age={30} isStudent={true} />
+    </>
   );
 }
 
-export default App
+export default App;

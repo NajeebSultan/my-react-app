@@ -1,5 +1,5 @@
 
-function Button(props){
+function Student(props){
   return( 
     <div>
       <p>Name: {props.name} </p>
@@ -8,4 +8,4 @@ function Button(props){
     </div>
   );
 }
-export default Student
+export default Student;

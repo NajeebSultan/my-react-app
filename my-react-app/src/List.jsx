@@ -14,4 +14,18 @@ const itemList = props.items;
   </>
 );
 }
+List.proptypes = {
+  category:PropTypes.string,
+  item: PropTypes.arrayOf(PropTypes.shape({
+    id: PropTypes.number,
+    name: PropTypes.string,
+    calories : PropTypes.number,
+  })),
+
+}
+
+List.defaultProps = {
+  category : "Category",
+  item: [],
+}
  export default List 

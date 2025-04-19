@@ -1,10 +1,11 @@
 
 import Button1 from './Button1.jsx';
+import ProfilePicture from './ProfilePicture.jsx'
 
 function App() {
 
   return(
-     <Button1/>
+     <ProfilePicture/>
   );
 
 }

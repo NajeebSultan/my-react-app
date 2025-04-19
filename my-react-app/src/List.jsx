@@ -6,10 +6,12 @@ function List(){
      {id: 4 , name:"coconut",calories: 159 },
      {id: 5 ,name:"pineapple",calories: 37}];
 
-    fruits.sort((a,b) => a.name.localeCompare(b.name));
-    fruits.sort((a,b) => b.name.localeCompare(a.name));
-    fruits.sort((a,b) => a.calories - b.calories);
-    fruits.sort((a,b) => b.calories - a.calories);
+    //fruits.sort((a,b) => a.name.localeCompare(b.name));
+    //fruits.sort((a,b) => b.name.localeCompare(a.name));
+    //fruits.sort((a,b) => a.calories - b.calories);
+    //fruits.sort((a,b) => b.calories - a.calories);
+
+    const lowCalFruit = fruits.filter(fruit => fruit.calories < 100);
 
 
   const listItems = fruits.map(fruit => <li key={fruit.id}>

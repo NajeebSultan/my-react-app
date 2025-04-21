@@ -1,5 +1,5 @@
 import React,{useState} from "react";
-function App(){
+function ColorPicker(){
 
   const  [color ,setColor] = useState()
   function handleColorChange(event){

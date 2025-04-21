@@ -7,18 +7,17 @@ function MyComponent3(){
     document.getElementById("foodInput").value ="";
 
     setFoods(foods =>[...food,newFood]);
-    
+
 
   }
-  function handleremoveFood(){
-
-  }
+  function handleremoveFood(index){
+setFoods(foods.filter((element,i) => i!== index));  }
 
   return(
 <div>
   <h2>List of Food</h2>
   <ul>
-    {foods.map((food, index) => <li key={index}> {food}</li>)}
+    {foods.map((food, index) => <li key={index} onClick={handleremoveFood}> {food}</li>)}
   </ul>
   <input type="text" id="foodInput" placeholder="Enter food name" />
   <button onClick={handleAddfood}>Add Food</button>
